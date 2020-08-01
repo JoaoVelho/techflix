@@ -4,6 +4,7 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -18,12 +19,9 @@ function CadastroCategoria() {
 
   useEffect(() => {
     async function fetchData() {
-      const URL = 'http://localhost:8000/categorias';
+      const categoriasFromServer = await categoriasRepository.getAll();
 
-      const resp = await fetch(URL);
-      const json = await resp.json();
-
-      setCategorias([...json]);
+      setCategorias([...categoriasFromServer]);
     }
 
     fetchData();
