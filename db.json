@@ -2,15 +2,122 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "Front End",
-      "descricao": "Categoria top",
-      "cor": "#cbd1ff"
+      "titulo": "Blockchain",
+      "cor": "#5432d9"
     },
     {
       "id": 2,
-      "nome": "Back End",
-      "descricao": "Outra categoria top",
-      "cor": "#cbd1ff"
+      "titulo": "Web",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 3,
+      "titulo": "IA",
+      "cor": "#00C86F"
+    }
+  ],
+  "videos": [
+    {
+      "titulo": "Cardano Shelley Hard Fork, Elrond, BTC Price, & Crypto News! // Crypto Over Coffee ep. 25",
+      "url": "https://www.youtube.com/watch?v=vGAmV7-71-0",
+      "categoriaId": 1,
+      "id": 1
+    },
+    {
+      "titulo": "Inteligência Artificial e Machine Learning",
+      "url": "https://www.youtube.com/watch?v=rJ8-m-6b8GQ",
+      "categoriaId": 3,
+      "id": 2
+    },
+    {
+      "titulo": "Qual a diferença entre Inteligência Artificial, Machine Learning, Data Science, Deep Learning, etc?",
+      "url": "https://www.youtube.com/watch?v=ccZ2pyr3YDw",
+      "categoriaId": 3,
+      "id": 3
+    },
+    {
+      "titulo": "Client Side Rendering vs Server Side - which is Best?",
+      "url": "https://www.youtube.com/watch?v=BmK7xAvL2N4",
+      "categoriaId": 2,
+      "id": 4
+    },
+    {
+      "titulo": "Minha opinião sobre Aquela I.A.",
+      "url": "https://www.youtube.com/watch?v=ABXEs47qToU",
+      "categoriaId": 3,
+      "id": 5
+    },
+    {
+      "titulo": "Is this the next BIG TREND in blockchain?",
+      "url": "https://www.youtube.com/watch?v=JKp4fht3xX4&t",
+      "categoriaId": 1,
+      "id": 6
+    },
+    {
+      "titulo": "Blockchain for Beginners",
+      "url": "https://www.youtube.com/watch?v=i9nUMvpT2rM",
+      "categoriaId": 1,
+      "id": 7
+    },
+    {
+      "titulo": "Algorítimos de Consenso, Tecnologia Blockchain e Bitcoin - por Andreas M. Antonopoulos",
+      "url": "https://www.youtube.com/watch?v=fw3WkySh_Ho",
+      "categoriaId": 1,
+      "id": 8
+    },
+    {
+      "titulo": "How To Become A Web Developer In 2020",
+      "url": "https://www.youtube.com/watch?v=v0Bkxc3YeIc",
+      "categoriaId": 2,
+      "id": 9
+    },
+    {
+      "titulo": "Decentralised Finance: Complete DeFi Overview & Outlook",
+      "url": "https://www.youtube.com/watch?v=Vq1bxcoW1jQ",
+      "categoriaId": 1,
+      "id": 10
+    },
+    {
+      "titulo": "How To Become A Blockchain Developer From Scratch!",
+      "url": "https://www.youtube.com/watch?v=25FcK5M4JoQ",
+      "categoriaId": 1,
+      "id": 11
+    },
+    {
+      "titulo": "Blockchain Applications in Industry",
+      "url": "https://www.youtube.com/watch?v=6aYQwHzUGbw",
+      "categoriaId": 1,
+      "id": 12
+    },
+    {
+      "titulo": "Blockchain Development Guide for 2020 Complete Roadmap",
+      "url": "https://www.youtube.com/watch?v=qYUfdEU2qNg",
+      "categoriaId": 1,
+      "id": 13
+    },
+    {
+      "titulo": "MASTER Solidity for Blockchain Step-By-Step (Full Course)",
+      "url": "https://www.youtube.com/watch?v=YJ-D1RMI0T0",
+      "categoriaId": 1,
+      "id": 14
+    },
+    {
+      "titulo": "Frontend vs Backend vs Fullstack Web Development - What should you learn?",
+      "url": "https://www.youtube.com/watch?v=pkdgVYehiTE",
+      "categoriaId": 2,
+      "id": 15
+    },
+    {
+      "titulo": "Web Development Roadmap 2020 {Start Now!}",
+      "url": "https://www.youtube.com/watch?v=iogabydg2y0&t",
+      "categoriaId": 2,
+      "id": 16
+    },
+    {
+      "titulo": "Criando um projeto do zero para seu portfólio | Masterclass #14",
+      "url": "https://www.youtube.com/watch?v=EhnXaybirdA",
+      "categoriaId": 2,
+      "id": 17
     }
   ]
 }

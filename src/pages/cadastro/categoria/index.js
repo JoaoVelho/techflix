@@ -3,35 +3,30 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
-  const [categorias, setCategorias] = useState([]);
   const valoresIniciais = {
     nome: '',
     descricao: '',
     cor: '#5432d9',
   };
-  const [values, setValues] = useState(valoresIniciais);
 
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
-  function handleChange(e) {
-    const { name, value } = e.target;
-    setValue(name, value);
-  }
+  const [categorias, setCategorias] = useState([]);
 
-  useEffect(async () => {
-    const URL = 'http://localhost:8000/categorias';
+  useEffect(() => {
+    async function fetchData() {
+      const URL = 'http://localhost:8000/categorias';
 
-    const resp = await fetch(URL);
-    const json = await resp.json();
+      const resp = await fetch(URL);
+      const json = await resp.json();
 
-    setCategorias([...json]);
+      setCategorias([...json]);
+    }
+
+    fetchData();
   }, []);
 
   return (
@@ -45,7 +40,7 @@ function CadastroCategoria() {
         onSubmit={(e) => {
           e.preventDefault();
           setCategorias([...categorias, values]);
-          setValues(valoresIniciais);
+          clearForm();
         }}
       >
         <FormField
@@ -83,7 +78,7 @@ function CadastroCategoria() {
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>{categoria.nome}</li>
+          <li key={`${categoria.titulo}`}>{categoria.titulo}</li>
         ))}
       </ul>
 
